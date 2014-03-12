@@ -9,11 +9,13 @@ namespace StickerBook.Logic.Models
 {
     class Player
     {
-        [JsonProperty("nombre")]
-        public string name = string.Empty;
-        [JsonProperty("foto")]
-        public string photo = string.Empty;
-        [JsonProperty("pistas")]
-        public List<string> clues;
+        [JsonProperty("id")]
+        public int Id { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }    
+        [JsonProperty("photo")]
+        public string Photo { get; set; }
+        [JsonProperty("clues")]
+        public List<string> Clues { get; set; }
     }
 }

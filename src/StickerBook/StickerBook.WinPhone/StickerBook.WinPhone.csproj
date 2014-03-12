@@ -173,10 +173,10 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SampleData\MainDataSource\MainDataSource.xaml">
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
-    </Page>
+    </DesignTimeOnly>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
@@ -188,15 +188,21 @@
     <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource.xsd" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\Armero.jpg" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\Falcao.jpg" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\image01.png" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\image02.png" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\image03.png" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\image04.png" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\image05.png" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\Ospina.jpg" />
-    <Resource Include="SampleData\MainDataSource\MainDataSource_Files\Yepes.jpg" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\Armero.jpg" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\Falcao.jpg" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\image01.png" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\image02.png" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\image03.png" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\image04.png" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\image05.png" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\Ospina.jpg" />
+    <DesignTimeOnly Include="SampleData\MainDataSource\MainDataSource_Files\Yepes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StickerBook.Logic\StickerBook.Logic.csproj">
+      <Project>{ED662663-E82B-4BC8-AC46-3EFD21FDF16A}</Project>
+      <Name>StickerBook.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
