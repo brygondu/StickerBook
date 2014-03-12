@@ -1,4 +1,5 @@
 ﻿using StickerBook.Logic.Common;
+using StickerBook.Logic.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,13 @@ namespace StickerBook.Logic.ViewModels
 {
     public class PlayerViewModel : BindableBase
     {
+        INavigationService navigationService;
+
+        public PlayerViewModel(INavigationService navigationService)
+        {
+            this.navigationService = navigationService;
+        }
+
         public string Name { get; set; }
         public string Photo { get; set; }
 
@@ -34,7 +42,7 @@ namespace StickerBook.Logic.ViewModels
 
         private void Discover()
         {
-            this.WasDiscovered = true;
+            navigationService.Navigate("DiscoverPage");
         }
     }
 }

@@ -7,13 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Class="StickerBook.WinPhone.Pages.MainPage"
     mc:Ignorable="d"
+    DataContext="{Binding Path=Main, Source={StaticResource Locator}}"
     xmlns:ViewModels="clr-namespace:StickerBook.Logic.ViewModels;assembly=StickerBook.Logic"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
-
-    <phone:PhoneApplicationPage.DataContext>
-        <ViewModels:MainViewModel />
-    </phone:PhoneApplicationPage.DataContext>
 
     <phone:PhoneApplicationPage.FontFamily>
 		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>

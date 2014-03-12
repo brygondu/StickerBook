@@ -30,7 +30,8 @@
 		</Border>
 	</ControlTemplate>
     <DataTemplate x:Key="PlayersItemTemplate">
-    	<Button Content="Button" Template="{StaticResource PlayerButtonControlTemplate}" Margin="0,0,20,20" FontSize="16"/>
+    	<Button Content="Button" Command="{Binding DiscoverCommand}"
+			Template="{StaticResource PlayerButtonControlTemplate}" Margin="0,0,20,20" FontSize="16"/>
     </DataTemplate>
     <Style x:Key="PlayersPanoramaStyle" TargetType="phone:Panorama">
         <Setter Property="ItemsPanel">

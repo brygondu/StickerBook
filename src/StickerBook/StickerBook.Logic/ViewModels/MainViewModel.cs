@@ -1,4 +1,5 @@
 ﻿using StickerBook.Logic.Common;
+using StickerBook.Logic.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,17 +10,21 @@ namespace StickerBook.Logic.ViewModels
 {
     public class MainViewModel : BindableBase
     {
-        public MainViewModel()
+        INavigationService navigationService;
+
+        public MainViewModel(INavigationService navigationService)
         {
+            this.navigationService = navigationService;
+
             Players = new ObservableCollection<PlayerViewModel>();
-            Players.Add(new PlayerViewModel()
+            Players.Add(new PlayerViewModel(navigationService)
             {
                 Name = "Sorey",
                 Photo = "",
                 WasDiscovered = false
             });
 
-            Players.Add(new PlayerViewModel()
+            Players.Add(new PlayerViewModel(navigationService)
             {
                 Name = "Hernan",
                 Photo = "",
