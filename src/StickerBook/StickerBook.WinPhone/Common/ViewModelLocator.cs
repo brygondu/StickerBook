@@ -12,10 +12,11 @@ namespace StickerBook.WinPhone.Common
     public class ViewModelLocator
     {
         INavigationService navigationService;
-
+        IPhoneService phoneService;
         public ViewModelLocator()
         {
             navigationService = new NavigationService();
+            phoneService = new PhoneService();
         }
 
         private MainViewModel main;
@@ -26,7 +27,7 @@ namespace StickerBook.WinPhone.Common
             {
                 if (main == null)
                 {
-                    main = new MainViewModel(navigationService);
+                    main = new MainViewModel(navigationService, phoneService);
                 }
 
                 return main;

@@ -11,27 +11,33 @@ namespace StickerBook.Logic.ViewModels
     public class MainViewModel : BindableBase
     {
         INavigationService navigationService;
+        IPhoneService phoneService;
 
-        public MainViewModel(INavigationService navigationService)
+        public MainViewModel(INavigationService navigationService, IPhoneService phoneService)
         {
             this.navigationService = navigationService;
+            this.phoneService = phoneService;
 
             Players = new ObservableCollection<PlayerViewModel>();
-            Players.Add(new PlayerViewModel(navigationService)
+            Players.Add(new PlayerViewModel(navigationService, phoneService)
             {
                 Name = "Sorey",
                 Photo = "",
-                WasDiscovered = false
+                WasDiscovered = false,
+                ParentViewModel = this
             });
 
-            Players.Add(new PlayerViewModel(navigationService)
+            Players.Add(new PlayerViewModel(navigationService, phoneService)
             {
                 Name = "Hernan",
                 Photo = "",
-                WasDiscovered = false
+                WasDiscovered = true,
+                ParentViewModel = this
             });
         }
 
         public ObservableCollection<PlayerViewModel> Players { get; set; }
+
+        public PlayerViewModel SelectedPlayer { get; set; }
     }
 }

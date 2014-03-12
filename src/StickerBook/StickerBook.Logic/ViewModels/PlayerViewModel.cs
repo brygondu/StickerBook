@@ -11,12 +11,15 @@ namespace StickerBook.Logic.ViewModels
     public class PlayerViewModel : BindableBase
     {
         INavigationService navigationService;
+        IPhoneService phoneService;
 
-        public PlayerViewModel(INavigationService navigationService)
+        public PlayerViewModel(INavigationService navigationService, IPhoneService phoneService)
         {
             this.navigationService = navigationService;
+            this.phoneService = phoneService;
         }
 
+        public MainViewModel ParentViewModel { get; set; }
         public string Name { get; set; }
         public string Photo { get; set; }
 
@@ -42,7 +45,15 @@ namespace StickerBook.Logic.ViewModels
 
         private void Discover()
         {
-            navigationService.Navigate("DiscoverPage");
+            this.ParentViewModel.SelectedPlayer = this;
+            if (this.wasDiscovered)
+            {
+                phoneService.ShowMessage("Jugadores","Ya has descubierto este jugador");
+            }
+            else
+            {
+                navigationService.Navigate("DiscoverPage");
+            }
         }
     }
 }
