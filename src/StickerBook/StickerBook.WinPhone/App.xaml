@@ -3,15 +3,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.MainDataSource" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
-    x:Class="StickerBook.WinPhone.App"
-    >
+    x:Class="StickerBook.WinPhone.App">
 
-    <!--Application Resources-->
     <Application.Resources>
-    	<SampleData:MainDataSource x:Key="MainDataSource" d:IsDataSource="True"/>
-        <local:LocalizedStrings xmlns:local="clr-namespace:StickerBook.WinPhone" x:Key="LocalizedStrings"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Templates/PanoramaStyles.xaml"/>
+                <ResourceDictionary Source="Resources/GeneralStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <SampleData:MainDataSource x:Key="MainDataSource" d:IsDataSource="True"/>
+            <local:LocalizedStrings xmlns:local="clr-namespace:StickerBook.WinPhone" x:Key="LocalizedStrings"/>
+        </ResourceDictionary>
     </Application.Resources>
-
+    
     <Application.ApplicationLifetimeObjects>
         <!--Required object that handles lifetime events for the application-->
         <shell:PhoneApplicationService
