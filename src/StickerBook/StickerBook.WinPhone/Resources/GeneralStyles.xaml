@@ -7,4 +7,5 @@
     <SolidColorBrush x:Key="DarkSemiTransparentBackground" Color="#7F000000"/>
     <SolidColorBrush x:Key="LightSemiTransparentBackground" Color="#99FFFFFF"/>
     <SolidColorBrush x:Key="MainForeground" Color="White"/>
+    <SolidColorBrush x:Key="SecondaryForeground" Color="Black"/>
 </ResourceDictionary>

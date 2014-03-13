@@ -36,7 +36,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\BindableBase.cs" />

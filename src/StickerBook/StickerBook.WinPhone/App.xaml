@@ -11,6 +11,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Templates/PanoramaStyles.xaml"/>
                 <ResourceDictionary Source="Resources/GeneralStyles.xaml"/>
+                <ResourceDictionary Source="Resources/Templates/SimplePageStyles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <SampleData:MainDataSource x:Key="MainDataSource" d:IsDataSource="True"/>
             <common:ViewModelLocator x:Key="Locator" />

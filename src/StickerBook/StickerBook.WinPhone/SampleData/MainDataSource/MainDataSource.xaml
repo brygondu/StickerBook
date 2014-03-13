@@ -5,113 +5,26 @@
 -->
 <SampleData:MainDataSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.MainDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <SampleData:MainDataSource.Players>
-    <SampleData:PlayersItem Name="Aaberg, Jesper" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Maecenas praesent class aliquam" Value="Cras class aliquam duis" />
-        <SampleData:CluesItem Name="Cras aenean accumsan" Value="Maecenas integer quisque" />
-        <SampleData:CluesItem Name="Integer quisque bibendum" Value="Aenean nunc" />
-        <SampleData:CluesItem Name="Duis dictumst eleifend" Value="Vivamus amet" />
-        <SampleData:CluesItem Name="Facilisi vivamus mauris" Value="Curae ante aliquam" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Adams, Ellen" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Faucibus curae" Value="Arcu aliquet" />
-        <SampleData:CluesItem Name="Nam aliquam" Value="Nam praesent" />
-        <SampleData:CluesItem Name="Habitant sed inceptos interdum" Value="Blandit diam donec" />
-        <SampleData:CluesItem Name="Nunc lobortis nascetur dis" Value="Eget accumsan mauris" />
-        <SampleData:CluesItem Name="Pharetra aliquet blandit est" Value="Nullam sed commodo bibendum" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Adams, Terry" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Ospina.jpg" WasDiscovered="True">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Amet placerat" Value="Dis est" />
-        <SampleData:CluesItem Name="Hac commodo leo" Value="Conubia hac elit etiam" />
-        <SampleData:CluesItem Name="Mus donec nullam" Value="Dictumst cubilia leo dapibus" />
-        <SampleData:CluesItem Name="Aptent etiam" Value="Enim egestas mus eleifend" />
-        <SampleData:CluesItem Name="Pulvinar sagittis auctor fusce" Value="Facilisi fusce lorem" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Adams, Terry" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Yepes.jpg" WasDiscovered="False">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Senectus lorem ante arcu" Value="Euismod morbi feugiat" />
-        <SampleData:CluesItem Name="Morbi diam" Value="Faucibus nec gravida habitant" />
-        <SampleData:CluesItem Name="Conubia sociosqu cubilia dapibus" Value="Iaculis erat aptent" />
-        <SampleData:CluesItem Name="Nec congue nulla eget" Value="Non auctor" />
-        <SampleData:CluesItem Name="Cursus suscipit" Value="Eros lacinia inceptos interdum" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Pfeiffer, Michael" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Egestas non per" Value="Lobortis nulla nibh" />
-        <SampleData:CluesItem Name="Elit dictum torquent euismod" Value="Per sed nisi laoreet" />
-        <SampleData:CluesItem Name="Sed proin feugiat sem" Value="Nascetur proin" />
-        <SampleData:CluesItem Name="Augue enim" Value="Natoque nisl" />
-        <SampleData:CluesItem Name="Dolor erat sit" Value="Posuere pharetra sem augue" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Philips, Carol" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Fames gravida vel" Value="Nunc dolor" />
-        <SampleData:CluesItem Name="Lectus iaculis libero" Value="Sit placerat" />
-        <SampleData:CluesItem Name="Eros ligula nibh" Value="Congue pulvinar" />
-        <SampleData:CluesItem Name="Felis nisi nisl" Value="Sagittis vel odio potenti" />
-        <SampleData:CluesItem Name="Litora ipsum luctus" Value="Fames senectus pretium sociosqu" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Poe, Toni" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Ospina.jpg" WasDiscovered="True">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Nam ultrices magnis lacinia" Value="Orci rhoncus nam" />
-        <SampleData:CluesItem Name="Laoreet natoque nunc" Value="Pede sodales quam" />
-        <SampleData:CluesItem Name="Vehicula volutpat mattis" Value="Felis viverra" />
-        <SampleData:CluesItem Name="Odio posuere potenti" Value="Ipsum justo" />
-        <SampleData:CluesItem Name="Orci pede pretium quam" Value="Cursus dictum suscipit lectus" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Hicks, Cassie" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Yepes.jpg" WasDiscovered="False">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Mauris sed quis" Value="Lacus libero" />
-        <SampleData:CluesItem Name="Rhoncus urna dis" Value="Sed aliquam quis dis" />
-        <SampleData:CluesItem Name="Cras est" Value="Integer est urna" />
-        <SampleData:CluesItem Name="Sodales mollis maecenas hac" Value="Torquent cras ultrices" />
-        <SampleData:CluesItem Name="Montes nostra" Value="Hac lorem vehicula duis" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Argentiero, Luca" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Justo leo mus" Value="Quisque nunc leo volutpat" />
-        <SampleData:CluesItem Name="Praesent ornare platea viverra" Value="Amet maecenas" />
-        <SampleData:CluesItem Name="Lacus duis" Value="Ante magna arcu praesent" />
-        <SampleData:CluesItem Name="Nec accumsan non" Value="Mus massa nec" />
-        <SampleData:CluesItem Name="Per primis" Value="Ligula metus" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Perry, Brian" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Bibendum lorem" Value="Non per morbi" />
-        <SampleData:CluesItem Name="Nunc sed rutrum" Value="Litora vivamus luctus" />
-        <SampleData:CluesItem Name="Sem sapien semper amet" Value="Magnis aliquam mattis" />
-        <SampleData:CluesItem Name="Dictumst eleifend" Value="Diam eget" />
-        <SampleData:CluesItem Name="Facilisi magna sociis faucibus" Value="Mauris elit sed aliquet" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Aaberg, Jesper" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Cras nam" Value="Class curae" />
-        <SampleData:CluesItem Name="Duis nunc aenean sed" Value="Aliquam maecenas" />
-        <SampleData:CluesItem Name="Dis integer mauris nullam" Value="Amet praesent est" />
-        <SampleData:CluesItem Name="Quisque vivamus" Value="Donec aliquam accumsan" />
-        <SampleData:CluesItem Name="Hac aliquet" Value="Ante blandit leo arcu" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
-    <SampleData:PlayersItem Name="Adams, Ellen" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False">
-      <SampleData:PlayersItem.Clues>
-        <SampleData:CluesItem Name="Cras maecenas duis" Value="Aliquam nunc integer amet" />
-        <SampleData:CluesItem Name="Quisque ante arcu" Value="Praesent vivamus" />
-        <SampleData:CluesItem Name="Nam aenean" Value="Accumsan bibendum mauris dictumst" />
-        <SampleData:CluesItem Name="Eleifend facilisi nullam" Value="Aptent sed diam" />
-        <SampleData:CluesItem Name="Aliquam aliquet" Value="Dis eget est" />
-      </SampleData:PlayersItem.Clues>
-    </SampleData:PlayersItem>
+    <SampleData:PlayersItem Name="Aaberg, Jesper" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True" />
+    <SampleData:PlayersItem Name="Adams, Ellen" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False" />
+    <SampleData:PlayersItem Name="Adams, Terry" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Ospina.jpg" WasDiscovered="True" />
+    <SampleData:PlayersItem Name="Adams, Terry" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Yepes.jpg" WasDiscovered="False" />
+    <SampleData:PlayersItem Name="Pfeiffer, Michael" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True" />
+    <SampleData:PlayersItem Name="Philips, Carol" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False" />
+    <SampleData:PlayersItem Name="Poe, Toni" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Ospina.jpg" WasDiscovered="True" />
+    <SampleData:PlayersItem Name="Hicks, Cassie" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Yepes.jpg" WasDiscovered="False" />
+    <SampleData:PlayersItem Name="Argentiero, Luca" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True" />
+    <SampleData:PlayersItem Name="Perry, Brian" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False" />
+    <SampleData:PlayersItem Name="Aaberg, Jesper" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True" />
+    <SampleData:PlayersItem Name="Adams, Ellen" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False" />
   </SampleData:MainDataSource.Players>
+  <SampleData:MainDataSource.SelectedPlayer>
+    <SampleData:SelectedPlayer Name="Aliquam nam aenean" Answer="Class cras">
+      <SampleData:SelectedPlayer.Clues>
+        <SampleData:CluesItem Name="Class aliquam maecenas" Value="Aliquam aenean maecenas" />
+        <SampleData:CluesItem Name="Integer curae donec" Value="Nam cras" />
+        <SampleData:CluesItem Name="Quisque cras aenean mauris" Value="Sed class duis" />
+      </SampleData:SelectedPlayer.Clues>
+    </SampleData:SelectedPlayer>
+  </SampleData:MainDataSource.SelectedPlayer>
 </SampleData:MainDataSource>

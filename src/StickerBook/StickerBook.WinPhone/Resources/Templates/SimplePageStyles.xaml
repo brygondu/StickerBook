@@ -1,0 +1,17 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<DataTemplate x:Key="ClueItemDataTemplate">
+		<Border Width="400" Padding="5" Background="{StaticResource LightSemiTransparentBackground}" Margin="0,0,0,10">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Text="{Binding Name}" Margin="0,0,10,0" TextWrapping="Wrap" Foreground="{StaticResource SecondaryForeground}" FontFamily="Segoe WP Semibold"/>
+				<TextBlock Text="{Binding Value}" Grid.Column="1" Margin="10,0,0,0" TextWrapping="Wrap" TextAlignment="Right" Foreground="{StaticResource SecondaryForeground}"/>
+			</Grid>
+		</Border>
+	</DataTemplate>
+	<!-- Resource dictionary entries should be defined here. -->
+</ResourceDictionary>

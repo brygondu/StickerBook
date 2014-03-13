@@ -45,6 +45,29 @@ namespace Expression.Blend.SampleData.MainDataSource
 				return this._Players;
 			}
 		}
+
+		private SelectedPlayer _SelectedPlayer = new SelectedPlayer();
+
+		public SelectedPlayer SelectedPlayer
+		{
+			get
+			{
+				return this._SelectedPlayer;
+			}
+
+			set
+			{
+				if (this._SelectedPlayer != value)
+				{
+					this._SelectedPlayer = value;
+					this.OnPropertyChanged("SelectedPlayer");
+				}
+			}
+		}
+	}
+
+	public class Players : System.Collections.ObjectModel.ObservableCollection<PlayersItem>
+	{ 
 	}
 
 	public class PlayersItem : INotifyPropertyChanged
@@ -97,16 +120,6 @@ namespace Expression.Blend.SampleData.MainDataSource
 			}
 		}
 
-		private Clues _Clues = new Clues();
-
-		public Clues Clues
-		{
-			get
-			{
-				return this._Clues;
-			}
-		}
-
 		private bool _WasDiscovered = false;
 
 		public bool WasDiscovered
@@ -125,10 +138,6 @@ namespace Expression.Blend.SampleData.MainDataSource
 				}
 			}
 		}
-	}
-
-	public class Players : System.Collections.ObjectModel.ObservableCollection<PlayersItem>
-	{ 
 	}
 
 	public class CluesItem : INotifyPropertyChanged
@@ -177,6 +186,67 @@ namespace Expression.Blend.SampleData.MainDataSource
 				{
 					this._Value = value;
 					this.OnPropertyChanged("Value");
+				}
+			}
+		}
+	}
+
+	public class SelectedPlayer : INotifyPropertyChanged
+	{
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		protected virtual void OnPropertyChanged(string propertyName)
+		{
+			if (this.PropertyChanged != null)
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+
+		private Clues _Clues = new Clues();
+
+		public Clues Clues
+		{
+			get
+			{
+				return this._Clues;
+			}
+		}
+
+		private string _Name = string.Empty;
+
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+
+			set
+			{
+				if (this._Name != value)
+				{
+					this._Name = value;
+					this.OnPropertyChanged("Name");
+				}
+			}
+		}
+
+		private string _Answer = string.Empty;
+
+		public string Answer
+		{
+			get
+			{
+				return this._Answer;
+			}
+
+			set
+			{
+				if (this._Answer != value)
+				{
+					this._Answer = value;
+					this.OnPropertyChanged("Answer");
 				}
 			}
 		}
