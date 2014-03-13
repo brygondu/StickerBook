@@ -11,12 +11,16 @@ namespace StickerBook.Logic.ViewModels
 {
     public class MainViewModel : BindableBase
     {
-        INavigationService navigationService;
-        IPhoneService phoneService;
-        IJsonService jsonService;
+        private INavigationService navigationService;
+        private IPhoneService phoneService;
+        private IJsonService jsonService;
+
+        private Random randomGen;
 
         public MainViewModel(INavigationService navigationService, IPhoneService phoneService)
         {
+            randomGen = new Random(DateTime.Now.Millisecond);
+
             this.Players = new ObservableCollection<PlayerViewModel>();
 
             this.navigationService = navigationService;
@@ -39,7 +43,8 @@ namespace StickerBook.Logic.ViewModels
                     Name = item.Name,
                     Photo = item.Photo,
                     WasDiscovered = false,
-                    Clues = new ObservableCollection<ClueViewModel>()
+                    Clues = new ObservableCollection<ClueViewModel>(),
+                    ParentViewModel = this
                 };
 
                 foreach (var clue in item.Clues)
@@ -54,10 +59,27 @@ namespace StickerBook.Logic.ViewModels
 
                 this.Players.Add(player);
             }
+
+            SufflePlayers();
         }
 
         public ObservableCollection<PlayerViewModel> Players { get; set; }
 
         public PlayerViewModel SelectedPlayer { get; set; }
+
+        internal void SufflePlayers()
+        {
+            int playersCount = this.Players.Count();
+
+            while (playersCount > 1)
+            {
+                playersCount--;
+                int randomIndex = randomGen.Next(playersCount + 1);
+
+                PlayerViewModel value = this.Players.ElementAt(randomIndex);
+                this.Players[randomIndex] = this.Players[playersCount];
+                this.Players[playersCount] = value;
+            }
+        }
     }
 }

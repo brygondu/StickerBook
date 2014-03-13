@@ -43,7 +43,7 @@
         			<TextBlock TextWrapping="Wrap" Text="¿Quién es?" Margin="12,0,0,0"/>
         			<TextBox Height="72" TextWrapping="Wrap" 
 						Text="{Binding SelectedPlayer.Answer, Mode=TwoWay}"/>
-        			<Button Content="Validar" Command="{Binding SelectedPlayer.DiscoverCommand}"/>
+        			<Button Content="Validar" Command="{Binding SelectedPlayer.GuessCommand}"/>
         		</StackPanel>
         	</Border>
 

@@ -23,6 +23,7 @@ namespace StickerBook.Logic.ViewModels
 
         public MainViewModel ParentViewModel { get; set; }
         public string Name { get; set; }
+        public string Answer { get; set; }
         public string Photo { get; set; }
 
         private bool wasDiscovered;
@@ -38,6 +39,32 @@ namespace StickerBook.Logic.ViewModels
         }
 
         public ObservableCollection<ClueViewModel> Clues { get; set; }
+
+        public ICommand GuessCommand
+        {
+            get
+            {
+                return new RelayCommand(Guess, null);
+            }
+        }
+
+        private void Guess()
+        {
+            if (this.Name.ToLower().Equals(this.Answer.ToLower()))
+            {
+                this.WasDiscovered = true;
+                phoneService.ShowMessage("Felicitaciones", "Has descubierto a " + this.Name);  
+            }
+            else
+            {
+                phoneService.ShowMessage("Fallaste", "Intenta con otro jugador."); 
+                this.ParentViewModel.SufflePlayers();
+            }
+
+            navigationService.GoBack();
+        }
+
+
 
         public ICommand DiscoverCommand
         {
