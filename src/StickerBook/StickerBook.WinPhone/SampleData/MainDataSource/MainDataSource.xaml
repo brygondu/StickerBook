@@ -95,5 +95,23 @@
         <SampleData:CluesItem Name="Facilisi magna sociis faucibus" Value="Mauris elit sed aliquet" />
       </SampleData:PlayersItem.Clues>
     </SampleData:PlayersItem>
+    <SampleData:PlayersItem Name="Aaberg, Jesper" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Armero.jpg" WasDiscovered="True">
+      <SampleData:PlayersItem.Clues>
+        <SampleData:CluesItem Name="Cras nam" Value="Class curae" />
+        <SampleData:CluesItem Name="Duis nunc aenean sed" Value="Aliquam maecenas" />
+        <SampleData:CluesItem Name="Dis integer mauris nullam" Value="Amet praesent est" />
+        <SampleData:CluesItem Name="Quisque vivamus" Value="Donec aliquam accumsan" />
+        <SampleData:CluesItem Name="Hac aliquet" Value="Ante blandit leo arcu" />
+      </SampleData:PlayersItem.Clues>
+    </SampleData:PlayersItem>
+    <SampleData:PlayersItem Name="Adams, Ellen" Photo="/StickerBook.WinPhone;component/SampleData/MainDataSource/MainDataSource_Files/Falcao.jpg" WasDiscovered="False">
+      <SampleData:PlayersItem.Clues>
+        <SampleData:CluesItem Name="Cras maecenas duis" Value="Aliquam nunc integer amet" />
+        <SampleData:CluesItem Name="Quisque ante arcu" Value="Praesent vivamus" />
+        <SampleData:CluesItem Name="Nam aenean" Value="Accumsan bibendum mauris dictumst" />
+        <SampleData:CluesItem Name="Eleifend facilisi nullam" Value="Aptent sed diam" />
+        <SampleData:CluesItem Name="Aliquam aliquet" Value="Dis eget est" />
+      </SampleData:PlayersItem.Clues>
+    </SampleData:PlayersItem>
   </SampleData:MainDataSource.Players>
 </SampleData:MainDataSource>

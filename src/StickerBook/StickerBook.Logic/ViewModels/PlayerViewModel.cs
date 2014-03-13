@@ -1,7 +1,9 @@
 ﻿using StickerBook.Logic.Common;
 using StickerBook.Logic.Contracts;
+using StickerBook.Logic.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Windows.Input;
@@ -35,6 +37,8 @@ namespace StickerBook.Logic.ViewModels
             }
         }
 
+        public ObservableCollection<ClueViewModel> Clues { get; set; }
+
         public ICommand DiscoverCommand
         {
             get
@@ -46,6 +50,7 @@ namespace StickerBook.Logic.ViewModels
         private void Discover()
         {
             this.ParentViewModel.SelectedPlayer = this;
+
             if (this.wasDiscovered)
             {
                 phoneService.ShowMessage("Jugadores","Ya has descubierto este jugador");
@@ -55,6 +60,8 @@ namespace StickerBook.Logic.ViewModels
                 navigationService.Navigate("DiscoverPage");
             }
         }
+
+        public int Id { get; set; }
     }
 }
 

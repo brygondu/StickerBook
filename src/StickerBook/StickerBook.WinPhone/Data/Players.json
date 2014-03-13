@@ -1,0 +1,122 @@
+﻿[
+  {
+    "id": "1",
+    "name": "David Ospina",
+    "photo": "http://www.fcf.com.co/images/stories/Ospina.png",
+    "clues": [
+      "Actual team: Niza (FRA)",
+      "Birth date: 31/08/1988",
+      "Height: 1.83 mts"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Pablo Armero",
+    "photo": "http://www.fcf.com.co/images/stories/Armero.png",
+    "clues": [
+      "Actual team: Udinese (ITA)",
+      "Birth date: 02/11/1986",
+      "Height: 1.74 mts"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Mario Yepes",
+    "photo": "http://www.fcf.com.co/images/stories/PLANTILLA_JUGADORES_5-6_/Yepes.png",
+    "clues": [
+      "Actual team: AC Milan (ITA)",
+      "Birth date: 13/01/1976",
+      "Height: 1.86 mts"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Cristian Zapata",
+    "photo": "http://www.fcf.com.co/images/stories/Zapata.png",
+    "clues": [
+      "Actual team: Villareal (ESP)",
+      "Birth date: 30/09/1986",
+      "Height: 1.87 mts"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Carlos Zapata",
+    "photo": "http://www.fcf.com.co/images/stories/PLANTILLA_JUGADORES_5-6_/Valdes.png",
+    "clues": [
+      "Actual team: Philadelphia Union (ITA)",
+      "Birth date: 22/05/1985",
+      "Height: 1.86 mts"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Juan Guillermo Cuadrado",
+    "photo": "http://www.fcf.com.co/images/stories/PLANTILLA_JUGADORES_5-6_/Cuadrado.png",
+    "clues": [
+      "Actual team: Fiorentina (ITA)",
+      "Birth date: 26/05/1988",
+      "Height: 1.78 mts"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Fredy Guarín",
+    "photo": "http://www.fcf.com.co/images/stories/F.Guarin.png",
+    "clues": [
+      "Actual team: Inter (ITA)",
+      "Birth date: 30/06/1986",
+      "Height: 1.84 mts"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "James Rodriguez",
+    "photo": "http://www.fcf.com.co/images/stories/James.png",
+    "clues": [
+      "Actual team: Porto (POR)",
+      "Birth date: 12/07/1991",
+      "Height: 1.80 mts"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Radamel Falcao",
+    "photo": "http://www.fcf.com.co/images/stories/PLANTILLA_JUGADORES_5-6_/Falcao2.png",
+    "clues": [
+      "Actual team: Monaco (FRA)",
+      "Birth date: 10/02/1986",
+      "Height: 1.77 mts"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Jackson Martinez",
+    "photo": "http://www.fcf.com.co/images/stories/PLANTILLA_JUGADORES_5-6_/Jackson.png",
+    "clues": [
+      "Actual team: Porto (POR)",
+      "Birth date: 03/10/1986",
+      "Height: 1.85 mts"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Carlos Bacca",
+    "photo": "http://www.fcf.com.co/images/stories/PLANTILLA_JUGADORES_5-6_/BACCA.png",
+    "clues": [
+      "Actual team: Brujas (BEL)",
+      "Birth date: 08/09/1986",
+      "Height: 1.81 mts"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Jose Pekerman",
+    "photo": "http://upload.wikimedia.org/wikipedia/commons/e/e4/Jos%C3%A9_Pekerman_Deportivo_Toluca_2007.jpg",
+    "clues": [
+      "Actual team: Selección Colombia",
+      "Birth date: 03/09/1949",
+      "Height: 1.78 mts"
+    ]
+  }
+]

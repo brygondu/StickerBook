@@ -1,10 +1,14 @@
 ﻿using StickerBook.Logic.Contracts;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Resources;
+using Windows.Storage;
 
 namespace StickerBook.WinPhone.Services
 {
@@ -22,6 +26,15 @@ namespace StickerBook.WinPhone.Services
                 return true;
             else
                 return false;
+        }
+
+        public async Task<string> ReadTextAsync(string fileName)
+        {
+            StreamResourceInfo stream = Application.GetResourceStream(new Uri(fileName, UriKind.Relative));
+            using (StreamReader reader = new StreamReader(stream.Stream))
+            {
+                return await reader.ReadToEndAsync();
+            }
         }
     }
 }

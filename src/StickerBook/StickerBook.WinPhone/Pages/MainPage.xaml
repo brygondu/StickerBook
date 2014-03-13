@@ -31,7 +31,7 @@
 			<!--Panorama item one-->
 			<phone:PanoramaItem Header="Jugadores" Orientation="Horizontal">
 				<Grid>
-					<ListBox ItemTemplate="{StaticResource PlayersItemTemplate}" ItemsSource="{Binding Players}" Margin="12,0,0,0" ItemsPanel="{StaticResource PlayersItemsPanelTemplate}" Width="850"/>
+					<ListBox ItemTemplate="{StaticResource PlayersItemTemplate}" ItemsSource="{Binding Players}" Margin="12,0,0,0" ItemsPanel="{StaticResource PlayersItemsPanelTemplate}" Width="1020"/>
 				</Grid>
 			</phone:PanoramaItem>
 
