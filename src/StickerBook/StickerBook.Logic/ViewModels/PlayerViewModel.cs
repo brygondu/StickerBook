@@ -50,15 +50,23 @@ namespace StickerBook.Logic.ViewModels
 
         private void Guess()
         {
-            if (this.Name.ToLower().Equals(this.Answer.ToLower()))
+            if (string.IsNullOrWhiteSpace(this.Answer))
             {
-                this.WasDiscovered = true;
-                phoneService.ShowMessage("Felicitaciones", "Has descubierto a " + this.Name);  
+                phoneService.ShowMessage("???","Y la respuesta?");
+                this.ParentViewModel.SufflePlayers();
             }
             else
             {
-                phoneService.ShowMessage("Fallaste", "Intenta con otro jugador."); 
-                this.ParentViewModel.SufflePlayers();
+                if (this.Name.ToLower().Equals(this.Answer.ToLower()))
+                {
+                    this.WasDiscovered = true;
+                    phoneService.ShowMessage("Felicitaciones", "Has descubierto a " + this.Name);
+                }
+                else
+                {
+                    phoneService.ShowMessage("Fallaste", "Intenta con otro jugador.");
+                    this.ParentViewModel.SufflePlayers();
+                }
             }
 
             navigationService.GoBack();

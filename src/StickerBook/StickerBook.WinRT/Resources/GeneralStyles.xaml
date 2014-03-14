@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:Converters="using:StickerBook.WinRT.Converters"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Resource dictionary entries should be defined here. -->
+    <Converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    <SolidColorBrush x:Key="DarkSemiTransparentBackground" Color="#7F000000"/>
+    <SolidColorBrush x:Key="LightSemiTransparentBackground" Color="#99FFFFFF"/>
+    <SolidColorBrush x:Key="MainForeground" Color="White"/>
+    <SolidColorBrush x:Key="SecondaryForeground" Color="Black"/>
+</ResourceDictionary>

@@ -3,8 +3,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:common="clr-namespace:StickerBook.WinPhone.Common"
-    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.MainDataSource" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
-    x:Class="StickerBook.WinPhone.App">
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" 
+    xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.MainDataSource" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" x:Class="StickerBook.WinPhone.App">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -15,7 +18,6 @@
             </ResourceDictionary.MergedDictionaries>
             <SampleData:MainDataSource x:Key="MainDataSource" d:IsDataSource="True"/>
             <common:ViewModelLocator x:Key="Locator" />
-            <local:LocalizedStrings xmlns:local="clr-namespace:StickerBook.WinPhone" x:Key="LocalizedStrings"/>
         </ResourceDictionary>
     </Application.Resources>
     
@@ -27,3 +29,5 @@
     </Application.ApplicationLifetimeObjects>
 
 </Application>
+    
+    
